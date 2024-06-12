@@ -1,2 +1,2 @@
-# gpt4o-clone-with-stt
-GPT-4o Clone with OpenAI Speech-To-Text Integration
+# gpt4-clone
+GPT-4 Clone built with Angular v18
