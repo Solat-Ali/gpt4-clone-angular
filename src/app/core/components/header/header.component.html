@@ -1,0 +1,14 @@
+<p-menubar [styleClass]="'menu'">
+    <ng-template pTemplate="start">
+        <h3>
+            ChatGPT
+        </h3>
+    </ng-template>
+    <ng-template pTemplate="end">
+        <div class="flex align-items-center gap-2">
+            <span class="pi pi-upload text-lg mr-2"></span>
+            <p-avatar label="S" styleClass="mr-2" shape="circle"
+                [style]="{'background-color': '#ef6c00', 'color': 'white'}" />
+        </div>
+    </ng-template>
+</p-menubar>
