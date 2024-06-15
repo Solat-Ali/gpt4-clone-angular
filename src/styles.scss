@@ -1,0 +1,14 @@
+/* Customized PrimeNG Theme */
+@import "app/core/styles/vendor/primeng/themes/lara-light/blue/theme.scss";
+
+/* Customized PrimeFlex Utilities */
+@import "app/core/styles/vendor/primeflex/primeflex";
+
+/* Prime Icons */
+@import "primeicons/primeicons.css";
+
+body {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+}
