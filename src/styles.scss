@@ -7,8 +7,5 @@
 /* Prime Icons */
 @import "primeicons/primeicons.css";
 
-body {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-}
+/* Main Custom Styles */
+@import "app/core/styles/_main";
