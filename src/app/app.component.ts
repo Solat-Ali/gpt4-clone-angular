@@ -1,15 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, inject, isDevMode } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { FooterComponent } from './core/components/footer/footer.component';
-import { HeaderComponent } from './core/components/header/header.component';
-import { HomeComponent } from './features/home/home.component';
+import { SharedService } from './shared/services/shared.service';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent, HomeComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
+  sharedService = inject(SharedService);
+
+  constructor() {
+    if(!isDevMode()){
+      this.sharedService.disableBrowserInspectElement();
+    }
+  }
 }

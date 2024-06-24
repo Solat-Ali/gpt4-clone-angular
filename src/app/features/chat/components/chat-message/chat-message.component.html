@@ -1,0 +1,13 @@
+<!-- {{ message?.content }} -->
+<!-- <p [innerHTML]="message.content">
+    {{ message | json }}
+</p>   -->
+
+<div class="message flex border-round-3xl" [class.message-assistant]="true">
+    <div class="message__avatar" *ngIf="true">
+        <p-image class="mx-auto" src="assets/images/chatgpt_icon_white.png" alt="Image" width="24" />
+    </div>
+    <div class="message__text flex-1 text-left">
+        {{ message }}
+    </div>
+</div>

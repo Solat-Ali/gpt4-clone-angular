@@ -1,0 +1,16 @@
+<p-dialog header="OpenAI Configuration" 
+[modal]="true" [visible]="true" 
+[breakpoints]="{ '1199px': '50vw', '575px': '90vw' }" 
+[style]="{ width: '30vw' }" 
+[closable]="false" 
+[closeOnEscape]="false" 
+[draggable]="false">
+    <span class="p-text-secondary block mb-5">Please enter project key</span>
+    <div class="flex flex-column gap-3 mb-3">
+        <label for="apiKey" class="font-semibold mb-2">Secret Key</label>
+        <p-password [(ngModel)]="secretKey" [feedback]="false" [toggleMask]="true" [styleClass]="'w-full'" [inputStyleClass]="'w-full'"/>
+    </div>
+    <div class="flex justify-content-end gap-2">
+        <p-button [disabled]="!secretKey" label="Save" (click)="setAPIKey.emit(secretKey)"/>
+    </div>
+</p-dialog>

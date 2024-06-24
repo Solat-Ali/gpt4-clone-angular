@@ -1,0 +1,1 @@
+export const CREATE_TRANSCRIPTION_URL = "https://platform.openai.com/docs/api-reference/audio/createTranscription";

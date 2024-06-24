@@ -1,0 +1,37 @@
+.chat-form {
+    background: #f4f4f4;
+    padding: 0.25rem 1rem;
+}
+
+.icon-microphone {
+    left: 15px;
+    color: gray;
+
+    &:focus,
+    &:hover,
+    &:active {
+        cursor: pointer;
+    }
+
+    &:focus:not(&--active),
+    &:hover:not(&--active),
+    &:active:not(&--active) {
+        color: black;
+    }
+
+    &--active {
+        color: red;
+    }
+
+    transition: all 0.3s;
+}
+
+.icon-send {
+    right: 15px;
+    color: gray;
+
+    &--active {
+        color: black;
+    }
+    transition: all 0.3s;
+}

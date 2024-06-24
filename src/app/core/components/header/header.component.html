@@ -1,8 +1,12 @@
 <p-menubar [styleClass]="'menu'">
     <ng-template pTemplate="start">
-        <h3>
+        <a pTooltip="Reset Chat" tooltipPosition="bottom"   class="cursor-pointer" (click)="sharedService.newChat$.next()">
+            <span class="pi pi-pen-to-square text-lg mr-2"></span>
+        </a>
+        
+        <a routerLink="/" class="no-underline text-xl font-bold text-gray-500">
             ChatGPT
-        </h3>
+        </a>
     </ng-template>
     <ng-template pTemplate="end">
         <div class="flex align-items-center gap-2">

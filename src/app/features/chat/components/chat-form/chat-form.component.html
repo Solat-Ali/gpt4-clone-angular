@@ -1,0 +1,17 @@
+<div class="chat-form flex align-items-end border-round-3xl border-black-alpha-10 border-2">
+    <span class="pi pi-microphone text-lg text-2xl mb-2 icon-microphone cursor-pointer "
+        [class.pi-stop-circle]="recordingInProgress" [class.icon-microphone--active]="recordingInProgress"
+        (click)="toggleRecording()"></span>
+
+    <!-- <input type="text" name="message" [(ngModel)]="message" (keydown.enter)="onPost()" pInputText
+                placeholder="Message ChatGPT" class="hover:shadow-none focus:shadow-none active:shadow-none border-0 w-full" /> -->
+
+    <textarea
+        class="chat-form__textarea bg-transparent border-none hover:shadow-none focus:shadow-none active:shadow-none border-0 w-full max-h-10rem"
+        rows="1" cols="20" [autoResize]="true" pInputTextarea name="message" [(ngModel)]="message"
+        (keydown.enter)="postMessage()" placeholder="Message ChatGPT">
+            </textarea>
+
+    <span class="pi pi-arrow-circle-up text-lg text-2xl mb-2 icon-send cursor-pointer"
+        [class.icon-send--active]="message" (click)="postMessage()"></span>
+</div>
