@@ -3,40 +3,16 @@
     overflow:hidden;
 }
 
-// .chat__content {
-//     display: flex;
-//     height: calc(100vh - 175px);
-// }
-
-// .chat__thread {
-//     overflow-y: hidden;
-// }
-// .chat__form {
-//     bottom: 60px;
-// }
-
-
-
-// borders
 .chat {
     border: 1px solid red;
 }
 
 .chat__content {
     border: 1px solid green;
-    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .chat__form {
     border: 1px solid blue;
 }
-
-// ::ng-deep .chat__thread {
-//     height: 100%;
-//     width: 100%;
-// }
-
-// .chat__blocker {
-//     border: 2px solid orange;
-//     height: 30px;
-// }
