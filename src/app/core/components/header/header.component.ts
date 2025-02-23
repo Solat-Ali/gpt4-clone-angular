@@ -9,11 +9,10 @@ import { SharedService } from '../../../shared/services/shared.service';
 import { TooltipModule } from 'primeng/tooltip';
 
 @Component({
-  selector: 'app-header',
-  standalone: true,
-  imports: [MenubarModule, BadgeModule, AvatarModule, InputTextModule, RippleModule, CommonModule, TooltipModule],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+    selector: 'app-header',
+    imports: [MenubarModule, BadgeModule, AvatarModule, InputTextModule, RippleModule, CommonModule, TooltipModule],
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
   public sharedService = inject(SharedService);

@@ -7,11 +7,10 @@ import { InputMaskModule } from 'primeng/inputmask';
 import { PasswordModule } from 'primeng/password';
 
 @Component({
-  selector: 'app-apikey-modal',
-  standalone: true,
-  imports: [CommonModule, FormsModule, DialogModule, ButtonModule, PasswordModule],
-  templateUrl: './apikey-modal.component.html',
-  styleUrl: './apikey-modal.component.scss'
+    selector: 'app-apikey-modal',
+    imports: [CommonModule, FormsModule, DialogModule, ButtonModule, PasswordModule],
+    templateUrl: './apikey-modal.component.html',
+    styleUrl: './apikey-modal.component.scss'
 })
 export class ApikeyModalComponent {
   secretKey: string;

@@ -4,11 +4,10 @@ import { ButtonModule } from 'primeng/button';
 import { ImageModule } from 'primeng/image';
 
 @Component({
-  selector: 'app-page-not-found',
-  standalone: true,
-  imports: [ImageModule, ButtonModule, RouterModule],
-  templateUrl: './page-not-found.component.html',
-  styleUrl: './page-not-found.component.scss'
+    selector: 'app-page-not-found',
+    imports: [ImageModule, ButtonModule, RouterModule],
+    templateUrl: './page-not-found.component.html',
+    styleUrl: './page-not-found.component.scss'
 })
 export class PageNotFoundComponent {
 

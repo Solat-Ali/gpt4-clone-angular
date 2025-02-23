@@ -11,12 +11,11 @@ import { ChatService } from './services/chat.service';
 import { interval } from 'rxjs';
 
 @Component({
-  selector: 'app-chat',
-  standalone: true,
-  imports: [CommonModule, ChatFormComponent, ChatMessageComponent, ImageModule, ScrollPanelModule, ApikeyModalComponent],
-  templateUrl: './chat.component.html',
-  styleUrl: './chat.component.scss',
-  providers: [ChatService]
+    selector: 'app-chat',
+    imports: [CommonModule, ChatFormComponent, ChatMessageComponent, ImageModule, ScrollPanelModule, ApikeyModalComponent],
+    templateUrl: './chat.component.html',
+    styleUrl: './chat.component.scss',
+    providers: [ChatService]
 })
 export class ChatComponent {
   messages: ChatCompletionMessageParam[] = [];

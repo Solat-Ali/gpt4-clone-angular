@@ -11,12 +11,11 @@ import { SharedService } from '../../../../shared/services/shared.service';
 import { ChatService } from '../../services/chat.service';
 
 @Component({
-  selector: 'app-chat-form',
-  standalone: true,
-  imports: [ReactiveFormsModule, FormsModule, ImageModule, IconFieldModule, InputIconModule, InputTextModule, InputTextareaModule, MessageModule],
-  providers: [ChatService],
-  templateUrl: './chat-form.component.html',
-  styleUrl: './chat-form.component.scss'
+    selector: 'app-chat-form',
+    imports: [ReactiveFormsModule, FormsModule, ImageModule, IconFieldModule, InputIconModule, InputTextModule, InputTextareaModule, MessageModule],
+    providers: [ChatService],
+    templateUrl: './chat-form.component.html',
+    styleUrl: './chat-form.component.scss'
 })
 export class ChatFormComponent {
   @Input()
